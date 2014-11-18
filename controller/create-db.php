@@ -1,15 +1,14 @@
 <?php
-
-require_once ("../model/database.php");
+require_once (__DIR__ ."/../model/database.php");
 $connection = new mysqli($host, $username, $password);
 
 if ($connection->connect_error) {
-    die(' Error (' . $connection->connect_error . ') '
-            . $mysqli->connect_error);
-            
+    die(' Error:  (' . $connection->connect_error . ') '
+            . $mysqli->connect_error);       
 }
- else{
-     echo"success" . $connection->host_info;
+ 
+else{
+     echo"Success: " . $connection->host_info;
  }
  
  $connection ->close();
