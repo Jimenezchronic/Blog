@@ -1,5 +1,5 @@
 <?php
-require_once (__DIR__ ."/../model/database.php"); //this code allows me to get out of this file to accept code from another file.
+require_once (__DIR__ ."/../model/database.php"); //this code allows me to accept code from another file.
 $connection = new mysqli($host, $username, $password); //variable that connects to server.
 
 if ($connection->connect_error) {
