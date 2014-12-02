@@ -18,7 +18,7 @@ if (!$exist) {
         echo "Database created successfully" . $database; //checks if the database has been created or not.
     }
 } else {
-    echo"database already exist";
+    echo"database already exist"; //echoeing that we already made a database.
 }
 
 
